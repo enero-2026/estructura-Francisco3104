@@ -1,292 +1,60 @@
-body{
-    background-color: #140500;
-}
-.heading{
-    border: 3px solid black;
-    padding: 100px;
-    padding-bottom: 20px;
 
+address{
+    font-size: 20px;
+}
+search{
     display: flex;
-    justify-content: space-between; 
-    align-items: flex-end; 
-    margin-right: 500px;
+    width: 100%;
+}
+search input{
+    flex: 1;
+    padding: 8px;
 }
 
+search button{
+    padding: 20px;
+}
+
+#logo img{
+    max-width: 150px;
+
+}
+.botones{
+    display: flex;
+}
+.botones li{
+    flex: 1 1 50%;
+    font-size: 30px
+}
+.navegacion ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 0;
+}
+.navegacion ul li{
+    padding: 20px 0;
+    font-size: 20px;
+}
 h1{
-    color: red;
     font-size: 50px;
-    margin: 0;
 }
-h2{
+section button{
+    border-radius: 6px;
+    font-size: 20px;
+    padding: 10px;
+    background-color: rgb(219, 191, 30);
     color: white;
-    font-size: 50px;
-
+    border: 1px;
 }
-.circulo{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background: gray;
-    color: white;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-}
-.contenedor{
-    display: flex;
-    border: 3px solid;
-    border-color: black;
-    position: relative;
-    width: 1000px;
-    height: 900px;
-}
-.ovalo{
-    position: absolute;
-    border-radius: 50%;
-    border: 3px solid;
-    border-color: black;
-    overflow: hidden;
-}
-.ovalo img{
+#latte{
     width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
-.ovalo:nth-child(2){
-    top: 50px;
-    right: 10px;
-    width: 400px;
-    height: 240px;
-}
-
-.ovalo:nth-child(3){
-    top: 150px;
-    left: 100px;
-    width: 240px;
-    height: 400px;
-}
-
-.ovalo:nth-child(4){
-    bottom: 100px;
-    right: 80px;
-    width: 240px;
-    height: 400px;
-}
-.ovalo:nth-child(5){
-    bottom: 50px;
-    left: 10px;
-    width: 400px;
-    height: 240px;
-}
-.texto1{
-    position: absolute;
-    top: 80px;
-    right: 140px;
-    color: white;
-    font-size: 80px;
-    text-shadow: 2px 2px 5px black;
-}
-.texto2{
-    position: absolute;
-    top: 170px;
-    left: 0px;
-    color: white;
-    font-size: 80px;
-    text-shadow: 2px 2px 5px black;
-}
-.texto3{
-    position: absolute;
-    bottom: 370px;
-    right: 50px;
-    color: white;
-    font-size: 80px;
-    text-shadow: 2px 2px 5px black;
-}
-.texto4{
-    position: absolute;
-    bottom: 100px;
-    left: 0px;
-    color: white;
-    font-size: 80px;
-    text-shadow: 2px 2px 5px black;
-}
-.lista{
+#brands{
     display: flex;
+    padding-top: 20px;
 }
-.listillo{
-    flex: 1;
-    border: 2px solid;
-    border-color: black;
-    height: 700px;
-    width: 200px;
-    display: grid;
-    min-width: 0;
-}
-.listillo img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    grid-area: 1/1;
-    overflow: hidden;
-}
-.listillo p{
-    grid-area: 1/1;
-    align-self: end;
-    justify-self: start;
-    text-shadow: 2px 2px 5px black;
-    color: white;
-    font-size: 60px;
-}
-.cont{
-    border-left: 3px solid white;
-    padding-bottom: 20px;
-    padding-left: 40px;
-    margin-left: 40px;
-    margin-top: 50px;
-    margin-right: 500px;
-}
-.cont p{
-    font-size: 30px;
-    padding-right: 500px;
-    color: white;
-}
-.lista img{
-    height: 300px;
-    width: 300px;
-    margin-top: 100px;
-    margin-right: 100px;
-}
-.museo img{
-    height: 900px;
-    width: 900px;
-}
-h3{
-    font-size: 150px;
-    color: white;
-}
-.absoluto{
-    color: white;
-    position: relative;
-    height: 300px;
-}
-h4{
-    font-size: 150px;
-}
-.absolutito{
-    border-bottom: 2px solid;
-    border-color: white;
-    width: 400px;
-    font-size: 30px;
-    position: absolute;
-    top: 190px;
-    left: 450px;
-}
-.circulin1{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background: black;
-    position: absolute;
-    bottom: 10px;
-    right: 200px;
-    justify-content: center;
-    display: flex;
-    align-content: center;
-    font-size: 40px;
-}
-.circulin1 p{
-    margin-top: 20px;
-}
-.circulin2{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background: black;
-    position: absolute;
-    bottom: 10px;
-    right: 100px;
-    justify-content: center;
-    display: flex;
-    align-content: center;
-    font-size: 40px;
-}
-.circulin2 p{
-    margin-top: 20px;
-}
-.griddy{
-    display: flex;
-    height: 1000px;
-    margin-top: 100px;
-}
-.sol{
-    flex: 1;
-    height: 200px;
-    padding: 0%;
-}
-.sol img{
-    max-width: 50%;
-    height: auto;
-}
-.navas{
-    flex: 3;
-}
-.navas img{
-    width: 110%;
-    height: 60%;
-    
-}
-.lamp{
-    flex: 2;
-}
-.lamp img{
-    max-width: 100%;
-    max-height: 100%;
-}
-.faq{
-    display: flex;
-}
-.faqi{
-    flex: 1;
-}
-.faq2{
-    flex: 3;
-}
-.faq2 div{
-    border-bottom: 1px solid white;
-}
-.pie{
-    display: flex;
-    border-top: 2px solid white;
-    background-color: #551702;
-}
-.musuma{
-    padding: 0%;
-    margin: 0px;
-    flex: 1;
-}
-.redes{
-    align-items: flex-start;
-    justify-content: flex-end;
-    margin-top: 50px;
-    margin-right: 100px;
-}
-.iconos{
-    display: flex;
-}
-.icono{
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background: black;
-    margin-right: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    overflow: hidden;
-}
-.icono img{
-    width: 110%;
-    height: 110%;
-    object-fit: contain;
+#brands a{
+    flex: 1 1 50%;
+    font-size: 20px
 }
